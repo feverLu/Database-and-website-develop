@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="jpa">
+		<class>edu.neu.cs5200.jga.jpa.cms.Custom</class>
+		<class>edu.neu.cs5200.jga.jpa.cms.OrderTable</class>
+		<properties>
+			<property name="eclipselink.ddl-generation" value="create-tables"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cs5200"/>
+     		<property name="javax.persistence.jdbc.user" value="root"/>
+     		<property name="javax.persistence.jdbc.password" value="university"/>
+			<!-- property name="eclipselink.ddl-generation" value="drop-and-create-tables"/-->
+     	</properties>
+	</persistence-unit>
+</persistence>

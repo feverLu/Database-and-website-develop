@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="onlinestore" transaction-type="RESOURCE_LOCAL">
+		<class>cs5200.jpa.Product</class>
+		<class>cs5200.jpa.Review</class>
+		<class>cs5200.jpa.Person</class>
+		<class>cs5200.jpa.Administrator</class>
+		<class>cs5200.jpa.Buyer</class>
+		<class>cs5200.jpa.Seller</class>
+		<class>cs5200.jpa.BankAccount</class>
+		<class>cs5200.jpa.Address</class>
+		<class>cs5200.jpa.Buyer</class>
+		<class>cs5200.jpa.CreditCard</class>
+		<class>cs5200.jpa.ProductRecord</class>
+		<class>cs5200.jpa.Receipt</class>
+		<properties>
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+			<property name="eclipselink.ddl-generation" value="drop-tables"/>
+			<property name="eclipselink.ddl-generation" value="create-tables"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/onlinestore"/>
+     		<property name="javax.persistence.jdbc.user" value="root"/>
+     		<property name="javax.persistence.jdbc.password" value="university"/>
+     		<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<!-- property name="eclipselink.ddl-generation" value="drop-and-create-tables"/-->
+		</properties>
+	</persistence-unit>
+</persistence>
